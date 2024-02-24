@@ -1,0 +1,44 @@
+/* Racing Sans One + inter + public sans  */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Racing+Sans+One&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+
+:root {
+    --primary-color: #0097B2;
+    --secondary-color: #3BB0D1;
+    --icon-color: #5CE1E6;
+}
+
+body {
+    font-family: "Public Sans", sans-serif;
+    /* font-family: "Inter", sans-serif; */
+    /* font-family: "Racing Sans One", sans-serif; */
+}
+
+
+/* navbar */
+.navbar-container {
+    position: fixed;
+    width: 100vw;
+    background-color: #0c1b27;
+    color: #ffffff;
+}
+
+.logo-box img {
+    width: 50px;
+}
+.navlinks{
+    color: #ffffff;
+}
+.avtive-navlinks{
+    color: var(--secondary-color);
+}
+
+/* background: linear-gradient(180deg, #0c1b27, #aaafb8); */
