@@ -23,6 +23,9 @@
     --secondary-color: #B3AAFF;
     --icon-color: #EFA9FA;
 }
+html{
+    padding: 0;
+}
 
 body {
     background-color: #13072E !important;
@@ -46,6 +49,10 @@ body {
     color: #ffffff;
     background-color: var(--primary-color);
     z-index: 99;
+}
+.row{
+    padding: 0;
+    margin: 0;
 }
 
 .logo-box a {
@@ -180,7 +187,6 @@ body {
 
 /* about */
 #about {
-    /* height: 100vh; */
     background-color: #13072E;
     color: #ffffff;
 }
@@ -252,6 +258,7 @@ body {
     position: relative;
     width: 100vw;
     padding-top: 100px;
+    overflow: hidden;
 
 }
 
@@ -313,7 +320,19 @@ body {
     left: 50%;
     margin-left: -3px;
     z-index: -1;
+    /* animation: moveline 6s linear forwards; */
 }
+
+/* animation for the vertical line of timeline in qualification and experience */
+/* @keyframes moveline {
+    0%{
+        height: 0;
+    }
+    100%{
+        height: 100%;
+    }
+    
+} */
 
 .center-qualification-box h2 {
     font-size: 5rem;
@@ -348,4 +367,74 @@ body {
     border-bottom: 15px solid transparent;
     border-right: 15px solid #3f2182;
     left: -15px;
+}
+
+@media only screen and (max-width: 600px) {
+    .navbar-container {
+        visibility: hidden;
+        display: none;
+    }
+    .home-container {
+        display: none;
+    }
+    #about{
+        padding: 0;
+        margin: 0;
+    }    
+}
+
+
+/* project */
+.projects-container{
+    width: 100vw;
+}
+.project-box{
+    background: linear-gradient(0deg, #13072E, #3f2182);
+    /* box-shadow: 2px 2px 5px #B3AAFF; */
+    border-radius: 20px;
+    /* overflow: hidden; */
+    padding: 0px 10px;
+}
+
+.project-image{
+    width: 200px;
+    width: 200px;
+    object-fit: cover;
+}
+
+
+
+.project-description-box h3{
+    font-weight: 700;
+    font-size: 20px;
+    color: #13072E;
+}
+.project-description-box a{
+    font-size: 14px;
+    text-decoration: none;
+    color: #606060;
+    display: flex;
+    justify-content:flex-end;
+    align-items: center;
+    gap: 5px;
+}
+.project-description-box p{
+    font-weight: 700;
+    font-size: 12px;
+    text-align: justify;
+    color: #a5a5a5;
+}
+
+.project-language{
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    background-color: #13072E;
+    color: #ffffff;
+    transition: .3s ease-in-out;
+    cursor: pointer;
+}
+
+.project-language:hover{
+   scale: .9;
 }
