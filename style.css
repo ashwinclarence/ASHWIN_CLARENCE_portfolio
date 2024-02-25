@@ -49,6 +49,15 @@ body {
     color: #ffffff;
     background-color: var(--primary-color);
     z-index: 99;
+  
+}
+
+.nav-scroll{
+    backdrop-filter: blur(11px) saturate(180%);
+    -webkit-backdrop-filter: blur(11px) saturate(180%);
+    background-color: var(--primary-color);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.125);
+    
 }
 .row{
     padding: 0;
@@ -202,13 +211,13 @@ body {
 }
 
 .sub-heading {
-    /* font-family: "Kanit", sans-serif; */
-    /* font-family: "Space Grotesk", sans-serif; */
     font-family: "Racing Sans One", sans-serif;
     font-size: 40px;
     color: #EFA9FA;
     text-shadow: 1px 1px 1px red;
 }
+
+  
 
 .about-btn {
     width: 300px;
@@ -217,14 +226,14 @@ body {
     border: none;
     outline: none;
     border-radius: 20px;
-    background: linear-gradient(135deg, #6a5afb, #e450fb);
-    /* box-shadow: 2px 2px 5px #EFA9FA; */
+    background-color: #3e13a2;
     transition: all .3s ease-in-out;
+
 }
 
 .about-btn a {
     text-decoration: none;
-    color: #13072E;
+    color: #ffffff;
     font-size: 18px;
     font-weight: 700;
 }
@@ -234,8 +243,8 @@ body {
 }
 
 .about-btn:focus {
-    background: linear-gradient(135deg, #402afe, #e12bfd);
-    /* box-shadow: 2px 2px 5px #EFA9FA; */
+    background-color: #3f2182;
+    box-shadow: 2px 2px 5px #EFA9FA;
 }
 
 .about-profile-box {
@@ -249,7 +258,7 @@ body {
     height: 300px;
     object-fit: cover;
     border-radius: 50%;
-    background: linear-gradient(135deg, #402afe, #e12bfd);
+      background: linear-gradient(135deg, #402afe, #e12bfd);
 }
 
 
@@ -389,11 +398,16 @@ body {
     width: 100vw;
 }
 .project-box{
-    background: linear-gradient(0deg, #13072E, #3f2182);
+    /* background: linear-gradient(0deg, #13072E, #3f2182); */
     /* box-shadow: 2px 2px 5px #B3AAFF; */
     border-radius: 20px;
     /* overflow: hidden; */
     padding: 0px 10px;
+    backdrop-filter: blur(23px) saturate(163%);
+    -webkit-backdrop-filter: blur(23px) saturate(163%);
+    background-color: #3f2182;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
 }
 
 .project-image{
