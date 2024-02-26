@@ -22,3 +22,19 @@ window.addEventListener("scroll", function() {
   function SndMail(){
     alert("Your Message sended");
   }
+
+
+
+  // toggle side bar for mobile and tab
+  function showSideBar(){
+    const sidebar=document.querySelector(".side-bar");
+    sidebar.style.display="flex";
+    document.getElementById("show-menu").style.display="none";
+    document.getElementById("hide-menu").style.display="block";
+  }
+  function hideSideBar(){
+    const sidebar=document.querySelector(".side-bar");
+    sidebar.style.display="none";
+    document.getElementById("show-menu").style.display="block";
+    document.getElementById("hide-menu").style.display="none";
+  }
