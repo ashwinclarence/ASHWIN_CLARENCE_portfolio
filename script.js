@@ -1,9 +1,4 @@
-function showMoreProject(){
-    document.getElementById("project-second-row").style.visibility="visible";
-    // document.getElementById("project-second-row").style.visibility = "hidden";
-    document.getElementById("show-more-project-btn").style.display="none";
-    
-}
+
 
 // Add an event listener to the window object that listens for the scroll event.
 window.addEventListener("scroll", function() {
@@ -18,3 +13,12 @@ window.addEventListener("scroll", function() {
       document.querySelector(".navbar-container").classList.remove("scroll-nav");
     }
   });
+
+
+
+
+  // contact form
+
+  function SndMail(){
+    alert("Your Message sended");
+  }
