@@ -54,15 +54,6 @@ body {
 
 }
 
-.scroll-nav {
-    backdrop-filter: blur(25px) saturate(180%);
-    -webkit-backdrop-filter: blur(25px) saturate(180%);
-    background-color: #13072e37;
-    /* border-bottom: 1px solid rgba(255, 255, 255, 0.125); */
-}
-
-
-
 .logo-box a {
     text-decoration: none;
     color: #ffffff;
@@ -126,7 +117,7 @@ body {
     flex-direction: column;
     /* align-items: center; */
     justify-content: center;
-    background: url(images/bgHome.png);
+    background: url(images/bgHome.webp);
     backdrop-filter: blur(25px) saturate(180%);
     -webkit-backdrop-filter: blur(25px) saturate(180%);
     background-position: center;
@@ -282,7 +273,7 @@ body {
     height: 300px;
     object-fit: cover;
     border-radius: 50%;
-    background: linear-gradient(135deg, #402afe, #e12bfd);
+    background: linear-gradient(135deg, #523fff72, #e749ff53);
 }
 
 
@@ -509,7 +500,7 @@ body {
     margin-top: 4rem;
     backdrop-filter: blur(10px) saturate(100%);
     -webkit-backdrop-filter: blur(10px) saturate(100%);
-    background: url(images/contactme.png);
+    background: url(images/contactme.webp);
     background-position: center;
     background-size: cover;
     border-radius: 20px;
@@ -825,7 +816,7 @@ body {
     }
 
     .home-container {
-        background: url(images/bgHomemobile.png);
+        background: url(images/bgHomemobile.webp);
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
