@@ -18,9 +18,26 @@ window.addEventListener("scroll", function() {
 
 
   // contact form
+  function checkNumber(){
+    const phoneNumber=document.getElementById("user-number");
+   const contactSubmit=document.getElementById("form-submit-btn");
+   console.log(phoneNumber.value);
+   console.log(phoneNumber.value.length);
+    if(isNaN(phoneNumber.value)||phoneNumber.value.length<10 ||phoneNumber.value.length>10){
+      phoneNumber.style.color="red";
+      // document.getElementById("form-error").innerHTML="Enter a valid Number";
+      contactSubmit.disabled=true;
+    }else{
+      phoneNumber.style.color="#000000";
+      contactSubmit.disabled=false;
+      // document.getElementById("form-error").innerHTML="";
+    }
+
+  }
+ 
 
   function SndMail(){
-    alert("Your Message sended");
+    alert("Message send")
   }
 
 
