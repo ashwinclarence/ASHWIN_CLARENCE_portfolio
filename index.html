@@ -49,6 +49,9 @@
     <!-- font-awesome pro -->
     <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.1/css/all.css">
 
+    <!-- ajax library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
 </head>
 
 <body>
@@ -359,7 +362,9 @@
             <p class="pt-3">If you like what you see, (and how could you not?) why not shoot me an email? </p>
         </div>
         <div class="contact-form ">
-            <form action="" class="d-flex flex-column gap-3 align-items-center" onsubmit="SndMail()">
+            <form id="submit-form" method="post"
+                action=""
+                class="d-flex flex-column gap-3 align-items-center" >
                 <input type="text" name="user-name" id="user-name" placeholder="Full Name" required autocomplete="off">
                 <input type="text" name="user-number" id="user-number" placeholder="Phone number" required
                     onchange="checkNumber()" autocomplete="off">
@@ -373,6 +378,27 @@
         </div>
         </div>
     </footer>
+
+    <!-- ajax to send form response -->
+    <script>
+        $("#submit-form").submit((e)=>{
+            e.preventDefault()
+            $.ajax({
+                url:"https://script.google.com/macros/s/AKfycbwFhaBiICp3SpRjiCjzjgqH9VDrC8UJB0Ym8yye13P1C8-7U78R_6juBeXSOLSsoYng/exec",
+                data:$("#submit-form").serialize(),
+                method:"post",
+                success:function (response){
+                    alert("Form submitted successfully")
+                    window.location.reload()
+                    //window.location.href="https://google.com"
+                },
+                error:function (err){
+                    alert("Something Error")
+    
+                }
+            })
+        })
+    </script>
 
     <!-- contact links -->
 
